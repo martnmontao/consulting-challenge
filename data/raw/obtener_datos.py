@@ -10,7 +10,7 @@ data = response.json()
 
 df = pd.json_normalize(data)
 
-df = df.head(1000)
+df = df.head(3000)
 
 df.to_csv("./ofertas_laborales.csv", index=False, encoding="utf-8-sig")
 
